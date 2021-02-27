@@ -12,7 +12,7 @@
     <title>inspire</title>
 </head>
 
-<body>
+<body class="container-fluid" id="images" >
     <header>
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
@@ -21,7 +21,7 @@
             </a>
         </nav>
     </header>
-    <main class="container-fluid">
+    <main>
         <div class="row">
             <div class="col">
                 <form class="form-inline" onsubmit="app.todosController.createTodo(event)">
@@ -30,8 +30,9 @@
                             aria-describedby="helpId">
                     </div>
             </div>
+        </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <div class="card">
                         <div id="todos-amount"></div>
                         <div class="card-body" id="todos"></div>
@@ -39,8 +40,13 @@
                 </div>   
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <div id="weathers"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="quotes"></div>
                 </div>
             </div>
             
