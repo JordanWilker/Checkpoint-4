@@ -6,9 +6,9 @@ function _drawMyTodos(){
     let template = ""
     console.log("working from the control")
     todos.forEach(t=> template += t.Template)
-    document.getElementById("todos").innerHTML = template;
+    document.getElementById("todos").innerHTML = template; 
     // @ts-ignore
-    document.getElementById("todos-amount").innerText = ProxyState.todos.length;
+    document.getElementById("todos-amount").innerText = ProxyState.todos.length+" Tasks";
 }
 
 export default class TodosController{

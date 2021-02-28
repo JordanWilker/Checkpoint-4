@@ -3,11 +3,10 @@ import {imagesService} from "../Services/ImagesService.js"
 
 
 function _drawImage(){
-    let images = ProxyState.images
-    let template = ""
-    console.log("image from the control")
+    let images = ProxyState.images.url
+    console.log(images)
     
-    //document.getElementById("images"). = images.url
+    document.getElementById("images").style.backgroundImage = "url("+images+")";
 }
 
 export default class ImagesController{
